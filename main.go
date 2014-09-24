@@ -16,7 +16,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		}
 		p = hostname
 	}
-	fmt.Fprintf(w, "Go demo running on %s.  Testing from Docker Hub.", p)
+	fmt.Fprintf(w, "Go demo running on %s.  Testing from Docker Hub via auto-deploy :)", p)
 }
 
 func main() {
