@@ -7,12 +7,16 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	hostname, err := os.Hostname()
-	if err != nil {
-		http.Error(w, err.Error(), 500)
-		return
+	p := os.Getenv("PROVIDER")
+	if p == "" {
+		hostname, err := os.Hostname()
+		if err != nil {
+			http.Error(w, err.Error(), 500)
+			return
+		}
+		p = hostname
 	}
-	fmt.Fprintf(w, "Go demo running on %s", hostname)
+	fmt.Fprintf(w, "Go demo running on %s", p)
 }
 
 func main() {
