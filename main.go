@@ -16,7 +16,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		}
 		p = hostname
 	}
-	fmt.Fprintf(w, "Go demo running on %s.  Demo auto-deploy on 2014-09-27.", p)
+	fmt.Fprintf(w, "Go demo running on %s.  Demo auto-deploy on 2014-10-15.", p)
 }
 
 func main() {
