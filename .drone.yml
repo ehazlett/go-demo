@@ -3,4 +3,4 @@ git:
     path: github.com/ehazlett/go-demo
 script:
     - go build
-    - go test -v
+    - go test -v ./...
