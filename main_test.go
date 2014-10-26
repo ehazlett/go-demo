@@ -18,7 +18,3 @@ func TestIndex(t *testing.T) {
 		t.Fatalf("expected status 200; received %d", w.Code)
 	}
 }
-
-func TestDemo(t *testing.T) {
-	t.Fatalf("this is a force fail")
-}
