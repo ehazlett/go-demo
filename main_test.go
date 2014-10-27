@@ -18,10 +18,3 @@ func TestIndex(t *testing.T) {
 		t.Fatalf("expected status 200; received %d", w.Code)
 	}
 }
-
-func TestDemo(t *testing.T) {
-	testVar := true
-	if !testVar {
-		t.Fatalf("expected true")
-	}
-}
